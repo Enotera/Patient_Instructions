@@ -1,0 +1,17 @@
+<div class="col-md-10 col-md-offset-1">
+  <div class="drug">
+    <%= link_to("編輯", edit_drug_path(@drug), class: "btn btn-primary pull-right")%>
+  </div>
+  <h2>藥品學名：<%= @drug.generic_name %></h2>
+  <h3>如何使用</h3>
+  <p><%= @drug.how_to_use %></p>
+  <h3>為什麼我要服用這個藥</h3>
+  <p><%= @drug.why_i_take_this_drug %></p>
+  <h3>用藥安全-孕婦</h3>
+  <p><%= @drug.pregnancy_warning %></p>
+  <h3>用藥安全-哺乳</h3>
+  <p><%= @drug.breastfeeding_warning %></p>
+  <h3>副作用</h3>
+  <p><%= @drug.side_effect %></p>
+
+</div>

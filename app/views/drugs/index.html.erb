@@ -1,1 +1,27 @@
-<h1>TEST</h1>
+<div class="col-md-10 col-md-offset-1">
+  <div class="drug">
+    <%= link_to("新衛教單", new_drug_path, class: "btn btn-primary pull-right") %>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <td>#</td>
+        <td>藥品學名</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @drugs.each do |drug| %>
+        <tr>
+          <td>#</td>
+          <td><%= link_to(drug.generic_name, drug_path(drug)) %></td>
+          <td>
+              <%= link_to("Edit", edit_drug_path(drug), class: "btn btn-sm btn-default")%>
+              <%= link_to("Delete", drug_path(drug),    class: "btn btn-sm btn-default",
+                          method: :delete, data: { confirm: "確定要刪除嗎？" } )%>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
