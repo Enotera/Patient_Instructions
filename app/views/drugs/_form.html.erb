@@ -1,11 +1,11 @@
   <%= simple_form_for @drug do |f| %>
     <div class="form-drug">
-      <%= f.input :generic_name, input_html: { class: "form-control"} %>
-      <%= f.input :how_to_use, input_html: { class: "form-control"} %>
-      <%= f.input :why_i_take_this_drug, input_html: { class: "form-control"} %>
-      <%= f.input :pregnancy_warning, input_html: { class: "form-control"} %>
-      <%= f.input :breastfeeding_warning, input_html: { class: "form-control"} %>
-      <%= f.input :side_effect, input_html: { class: "form-control"} %>
+      <%= f.input :generic_name, label: "藥品學名" %>
+      <%= f.input :how_to_use, label: "如何使用" %>
+      <%= f.input :why_i_take_this_drug, label: "為什麼我要服用這個藥" %>
+      <%= f.input :pregnancy_warning, label: "用藥安全-孕婦" %>
+      <%= f.input :breastfeeding_warning, label: "用藥安全-哺乳" %>
+      <%= f.input :side_effect, label: "副作用" %>
 
     </div>
     <%= f.submit "Submit", class: "btn btn-primary", data: { disable_with: "Submitting..." } %>

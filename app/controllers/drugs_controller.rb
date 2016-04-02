@@ -18,7 +18,7 @@ class DrugsController < ApplicationController
   end
 
   def show
-    @drug = Drug.find(params[:id])
+    @drug = Drug.find_by_generic_name(params[:id])
   end
 
   def edit

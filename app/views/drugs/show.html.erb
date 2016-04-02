@@ -4,14 +4,14 @@
   </div>
   <h2>藥品學名：<%= @drug.generic_name %></h2>
   <h3>如何使用</h3>
-  <p><%= @drug.how_to_use %></p>
+  <p><%= render_how_to_use(@drug) %></p>
   <h3>為什麼我要服用這個藥</h3>
-  <p><%= @drug.why_i_take_this_drug %></p>
+  <p><%= render_why_i_take_this_drug(@drug) %></p>
   <h3>用藥安全-孕婦</h3>
-  <p><%= @drug.pregnancy_warning %></p>
+  <p><%= render_pregnancy_warning(@drug) %></p>
   <h3>用藥安全-哺乳</h3>
-  <p><%= @drug.breastfeeding_warning %></p>
+  <p><%= render_breastfeeding_warning(@drug) %></p>
   <h3>副作用</h3>
-  <p><%= @drug.side_effect %></p>
+  <p><%= render_side_effect(@drug) %></p>
 
 </div>
