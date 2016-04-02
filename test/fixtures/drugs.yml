@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  generic_name: MyString
+  how_to_use: MyText
+  why_i_take_this_drug: MyText
+  pregnancy_warning: MyText
+  breastfeeding_warning: MyText
+  side_effect: MyText
+
+two:
+  generic_name: MyString
+  how_to_use: MyText
+  why_i_take_this_drug: MyText
+  pregnancy_warning: MyText
+  breastfeeding_warning: MyText
+  side_effect: MyText
