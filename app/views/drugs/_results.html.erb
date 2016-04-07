@@ -1,0 +1,10 @@
+<table>
+  <tr>
+    <th><%= sort_link(@q, :generic_name) %> </th>
+  </tr>
+  <% @drugs.each do |drug| %>
+    <tr>
+      <td><%= link_to(drug.generic_name, drug_path(drug.generic_name)) %> </td>
+    </tr>
+  <% end %>
+</table>

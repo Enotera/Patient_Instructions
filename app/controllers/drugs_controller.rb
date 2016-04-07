@@ -1,6 +1,9 @@
 class DrugsController < ApplicationController
   def index
-    @drugs = Drug.all
+    @q = Drug.ransack(params[:q])
+    @drugs = @q.result(distinct: true)
+
+    # @drugs = Drug.all
   end
 
   def new
